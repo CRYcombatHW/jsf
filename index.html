@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body onkeydown="on_key_down(event)">
+	<div class="current-score">
+		<div class="score-item">
+			<div class="score-label">Score:</div>
+			<div class="score-value" id="score">0</div>
+		</div>
+	</div>
+	<div class="canvas-wrap">
+		<div class="canvas-container">
+			<canvas id="main-canvas"></canvas>
+		</div>
+	</div>
+	<div class="button-container">
+		<button id="pause-button">start</button>
+	</div>
+	<div class="score-header">Top 3 Scores</div>
+	<div class="score-container">
+		<div class="score-item">
+			<div class="score-label">1:</div>
+			<div class="score-value" id="score1">0</div>
+		</div>
+		<div class="score-item">
+			<div class="score-label">2:</div>
+			<div class="score-value" id="score2">0</div>
+		</div>
+		<div class="score-item">
+			<div class="score-label">3:</div>
+			<div class="score-value" id="score3">0</div>
+		</div>
+	</div>
+</body>
+<script src="dist/main.js"></script>
+</html>
